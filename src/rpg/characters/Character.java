@@ -10,10 +10,10 @@ public abstract class Character {
 
 
     //Constructor
-    public Character(String name, int maxHealth, int currentHealth, int attack, int defense, int level) {
+    public Character(String name, int maxHealth, int attack, int defense, int level) {
         this.name = name;
         this.maxHealth = maxHealth;
-        this.currentHealth = currentHealth;
+        this.currentHealth = maxHealth;
         this.attack = attack;
         this.defense = defense;
         this.level = level;

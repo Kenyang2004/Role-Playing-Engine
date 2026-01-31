@@ -7,13 +7,13 @@ public abstract class Player extends Character {
     protected Inventory inventory;
 
     public Player(String name, int maxHealth, int currentHealth, int attack, int defense, int level) {
-        super(name, maxHealth,currentHealth, attack, defense, level);
+        super(name, maxHealth, attack, defense, level);
         this.experience = 0;
         this.inventory = new Inventory();
   }
 
     
-  protected void gainExperience(int amount) {
+  public void gainExperience(int amount) {
       experience += amount;
       if (experience >= experienceToLevelUp()) {
           experience -= experienceToLevelUp();
